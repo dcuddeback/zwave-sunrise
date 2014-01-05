@@ -13,7 +13,7 @@
 #include <openzwave/Notification.h>
 #include <openzwave/platform/Log.h>
 
-#include "config.h"
+#include "config.hpp"
 #include "range.hpp"
 
 static void sunrise(OpenZWave::Manager *manager, const Config &config)

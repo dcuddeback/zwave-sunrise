@@ -16,10 +16,10 @@ $(BIN): sunrise.o config.o
 clean:
 	rm -f $(BIN) sunrise.o config.o
 
-sunrise.o: sunrise.cpp config.h
+sunrise.o: sunrise.cpp config.hpp
 	$(CXX) $(CXXFLAGS) -I /usr/include -I $(OZWDIR) -I $(OZWDIR)/value_classes -I $(OZWDIR)/platform -c sunrise.cpp -o sunrise.o
 
-config.o: config.cpp config.h
+config.o: config.cpp config.hpp
 	$(CXX) $(CXXFLAGS) -I /usr/include -I $(OZWDIR) -I $(OZWDIR)/value_classes -I $(OZWDIR)/platform -c config.cpp -o config.o
 
 install:
